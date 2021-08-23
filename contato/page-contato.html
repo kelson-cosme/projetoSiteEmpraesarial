@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contato/css-contato.css">
+    <link rel="icon" href="/imagens/logo5.png">
+    <title>Contato</title>
+</head>
+<body>
+    <div id="corpo">
+        <header>
+            <img width="80px" height="80px" src="/imagens/logo5.png" alt="">
+
+            <nav>
+                <div id="menu" class="menuMobile">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            
+                <ul id="navegacao" class="navegacao">
+                    <div id="fechar" class="fechar">
+                        <div class="line4 barra"></div>
+                        <div class="line5 barra"></div>
+                    </div>
+
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="/servicos/page-servicos.html"><li>Serviços</li></a>
+                    <a href="/sobre/page-sobre.html"><li>Sobre</li></a>
+                    <a href="/contato/page-contato.html"><li><u>Contato</u></li></a>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="contato" data-anime="top">
+            <div class="titulo">
+                <h1>Contato</h1>
+            </div>
+
+            <div class="logoContato">
+                <div data-anime="left">
+                    <a href="https://api.whatsapp.com/send?phone=5565984710860&text=Ol%C3%A1%2C%20queria%20fazer%20um%20or%C3%A7amento%20para%20meu%20ter%20meu%20Web%20Site.">
+                        <img width="90px" src="/contato/imgs/whatsTransparente-min.png" alt="logo whatsapp">
+                        <p>(65) 98471 - 0860</p>
+                    </a>
+                </div>
+
+                <div data-anime="left">
+                    <a href="mailto:contato@webnexus.dev.br?">
+                        <img width="90px" src="/contato/imgs/gmailTransparente-min.png" alt="logo gmail">
+                        <p>contato@webnexus.dev.br</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menssagem" data-anime="top">
+                <h1>Enviar Menssagem</h1>
+
+                <form id="formulario" class="card" method="POST" action="https://api.staticforms.xyz/submit">
+                    <input type="hidden" name="accessKey" value="a54cf88a-f64f-4bd6-bb5e-713ae6a4c45f">
+                    <input type="hidden" name="redirectTo" value="https://kelson-cosme.github.io/Portifolio-Kelson/">
+
+                    <label for="inputName">Primeiro Nome:</label>
+                    <input class="field" type="text" name="name">
+
+                    <label for="InputEmail">Endereço Email:</label>
+                    <input class="field" type="email" name="email">
+
+                    <label for="TextArea">Menssagem:</label>
+                    <textarea class="field" name="message" placeholder="Digite sua mensagem aqui."></textarea>
+                    
+                    <input class="field enviar" type="submit" value="Enviar">
+                </form>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="rodapeDentro">
+                <div class="rodape1">
+                    <div>
+                        <img width="50px" src="/imagens/logo5.png" alt="">
+                    </div>
+            
+
+                    <div >
+                        <ul class="listaRodape">
+                            <a href="/index.html"> <li>Home</li></a>
+                            <a href="/servicos/page-servicos.html"><li>Serviços</li></a>
+                            <a href="/sobre/page-sobre.html"><li>Sobre</li></a>
+                            <a href="/contato/page-contato.html"><li>Contato</li></a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rodape2">
+
+                    <div class="textoRodape">
+                        <p>&copy Copyright 2021- todos direitos reservado</p>
+                    </div>
+
+                    <div class="redeSociais">
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=5565984710860&text=Ol%C3%A1%2C%20queria%20fazer%20um%20or%C3%A7amento%20para%20meu%20ter%20meu%20Web%20Site." target="_blank"><img width="50px" src="/imagens/whats.png" alt="Logo whatsapp"></a> 
+                         </div>
+                     
+                         <div>
+                             <a href="https://www.instagram.com/web__nexus/" target="_blank">
+                             <img width="50px" src="/imagens/insta.png" alt="Logo Instagram">
+                             </a>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </footer>
+
+</body>
+<script src="/Menu-Mobile.js"></script>
+<script src="/scrooll.js"></script>
+</html>

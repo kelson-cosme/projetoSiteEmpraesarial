@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+#corpo{
+    margin: auto;
+    max-width: 1466px;
+    overflow: hidden;
+}
+/* navegaçao */
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgb(156, 156, 156) 2px 2px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    transition: .3s;
+}
+header:hover{
+    background-color: #174580;
+    color: green;
+}
+.navegacao{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+.navegacao a{
+    text-decoration: none;
+    color: black
+}
+.navegacao li{
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 10px;
+    transition: linear .3s;
+}
+.navegacao li:hover{
+    background-color: white;
+    color: #444343;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+/* Inicio */
+.inicio{
+    background-image: url("/imagens/25101.jpg");
+    background-size: cover;
+}
+
+.inicioDentro{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+.material-icons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.material-icons{
+    width: 20px;
+}
+.boasVindas{
+    width: 50%;
+}
+.boasVindas h1{
+    font-size: 60px;
+    color: #444343;
+
+}
+.boasVindas p {
+    color: #174580;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.imgInicio{
+    width: 50%;
+
+    animation: mexer;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes mexer{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+.boasVindas button{
+    font-size: 18px;
+    background-color: #174580;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    
+    transition: .5s;
+}
+.boasVindas button:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+/*Habilidades*/
+.habilidade{
+    margin-bottom: 40px;
+}
+.habilidadeDentro{
+    width: 90%;
+    margin: auto;
+}
+.tituloHabilidade{
+    margin-top: 5%;
+    text-align: center;
+}
+.tituloHabilidade p{
+    color: #174580;
+    font-size: 25px;
+}
+.tituloHabilidade h1{
+    font-size: 45px;
+    color: #444343;
+}
+.imgHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgHabilidades h1{
+    font-size: 35px;
+    color: #444343;
+    margin-bottom: 25px;
+}
+.imgHabilidades p{
+    color: #174580;
+    font-size: 22px;
+}
+.imgHabilidades div{
+    width: 28%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 0 55px 0 55px;
+    transition: 0.5s;
+
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+		-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+		box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.imgHabilidades div:hover{
+    background-color: rgba(44, 41, 41, 0.13);
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.03);
+}
+.imgHabilidades img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Menssagem*/   
+.menssagem{
+    background-image: url("/imagens/fundoAzul_Easy-Resize.com-min.jpg");
+    background-size: cover;
+}
+.menssagemDentro{
+    padding: 30px 0;
+    max-width: 1366px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.menssagemDentro p{
+    font-size: 25px;
+}
+.menssagemDentro h1{
+    font-size: 45px;
+}
+.menssagemDentro button{
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #174580;
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+.menssagemDentro button:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+/*------------------------------------------*/
+/*Porque criar um site*/
+
+.porqueDentro{
+    max-width: 1366px;
+    margin: auto;
+}
+.porqueDentro2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.imgPorque{
+    width: 50%;
+    animation: mexer2;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes mexer2{
+    0%{
+        transform: translatex(-50px);
+    }
+    100%{
+        transform: translatex(1px);
+    }
+}
+
+.explicacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.explicacao p{
+    font-size: 22px;
+    color: #174580;
+}
+.explicacao h1{
+    font-size: 45px;
+    color: #444343;
+    margin-bottom: 20px;
+}
+.imgExplicacao div{
+    display: flex;
+    padding: 15px 0;
+}
+.imgExplicacao img{
+    padding-right: 20px;
+}
+.imgExplicacao p{
+    font-size: 22px;
+    color: #444343;
+}
+/*--------------------------------------*/
+/*Menssagem*/
+.menssagem2{
+    background-image: url("/imagens/fundoAzul2_Easy-Resize.com-min.jpg");
+    background-size: cover;
+}
+/*---------------------------------*/
+/*Serviços*/
+
+.servicos{
+    max-width: 1366px;
+    margin: auto;
+}
+.servicosDentro{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+.servicosDentro p{
+    color: #174580;
+    font-size: 22px;
+}
+.servicosDentro h1{
+    color: #444343;
+    font-size: 45px;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.proj{
+    width: 47%;
+    border-radius: 10px;
+
+    transition: .2s;
+}
+.proj:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.05);
+
+}
+.proj p{
+    color: #444343;
+}
+.projetos img{
+    width: 100%;
+    border-radius: 10px;
+}
+.mais{
+    background-color: #174580;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+.mais p{
+    color: white;
+    text-decoration: underline;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/*--------------------------------------*/
+/*Radapé*/
+footer{
+    background-image: url("/imagens/rodapee-min.jpg");
+}
+.rodape{
+    max-width: 1366px;
+    margin: auto;
+}
+.rodapeDentro{
+    width: 90%;
+    margin: auto;
+}
+.rodape1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444343;
+}
+.listaRodape{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.listaRodape li{
+    padding-top: 15px;
+    padding-right: 30px;
+}
+.rodape2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redeSociais{
+    display: flex;
+}
+.redeSociais div{
+    margin: 0 5px;
+}
+.redeSociais img{
+    transition: .2s;
+}
+.redeSociais img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*ANIMAÇÃO SCROLL ---------------------------------------*/
+[data-anime] {
+    opacity: 0;
+    transition: 1.5s;  
+}
+[data-anime = "left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+    transform: translate3d(10px, 0, 0);
+}
+[data-anime = "top"] {
+    transform: translate3d(0,-50px, 0);
+}
+[data-anime = "bottom"] {
+    transform: translate3d(0,50px,0);
+}
+/*------------------------------------*/
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .imgHabilidades div{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .menuMobile{
+        padding: 12px;
+    }
+    .menuMobile div{
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        margin: 10px;
+    }
+    #navegacao{
+        color: #fff;
+    }
+    .navegacao{
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #174580;
+        transform: translateX(100%);
+        transition: .5s;
+        border-radius: 20px 0 20px 0;
+    }
+    .navegacao a{
+        color: white;
+    }
+    
+    .navegacao li:hover{
+        background-color: #fff;
+        color: #000;
+        border-radius: 10px;
+        text-decoration: underline;
+        padding: 15px;
+    }
+    .barra{
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 10px;
+    }
+    .line4{
+        transform: rotate(-49deg) translate(-5px, 8px);
+    }
+    .line5{
+        transform: rotate(49deg) translate(-2px, -7px);
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+    /*-------------------------------------*/
+    .inicioDentro{
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+    .boasVindas{
+        width: 100%;
+    }
+    .imgInicio{
+        width: 100%;
+    }
+    .imgHabilidades div{
+        width: 100%;
+    }
+    .porqueDentro2{
+        flex-direction: column;
+    }
+    .imgPorque{
+        width: 100%;
+    }
+    @keyframes mexer2{
+        0%{
+            transform: translatex(-10px);
+        }
+        100%{
+            transform: translatex(10px);
+        }
+    }
+    .explicacao{
+        text-align: center;
+    }
+
+    .projetos{
+        flex-direction: column;
+    }
+    .proj{
+        width: 100%;
+    }
+    .rodape1{
+        text-align: center;
+        display: block;
+        border-radius: 20px;
+        padding-top: 10px;
+    }
+    .rodape1 img{
+        width: 80px;
+    }
+    .rodape2{
+    color: #ffff;
+
+    }
+    .listaRodape{
+        display: block;
+    }
+    .listaRodape li{
+        font-size: 20px;
+        padding: 15px;
+        color: #ffff;
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width:427px) {
+    .imgExplicacao div{
+        flex-direction: column-reverse;
+    }
+    .imgExplicacao div img{
+        width: 80px;
+        margin: auto;
+    }
+}
+

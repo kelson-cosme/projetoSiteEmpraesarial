@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+#corpo{
+    margin: auto;
+    max-width: 1466px;
+    overflow: hidden;
+}
+/* navegaçao */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgb(156, 156, 156) 2px 2px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    transition: .3s;
+}
+header:hover{
+    background-color: #174580;
+    color: green;
+}
+.navegacao{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+.navegacao a{
+    text-decoration: none;
+    color: black
+}
+.navegacao li{
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 10px;
+    transition: linear .3s;
+}
+.navegacao li:hover{
+    background-color: white;
+    color: #444343;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+/*---------------------------------------*/
+/*Serviços*/
+.servicos{
+    text-align: center;
+}
+.titulo{
+    background-image: url("/contato/imgs/fundoContatoo.jpg");
+
+    background-size: contain;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: underline
+}
+.titulo h1{ 
+    padding: 50px 0;
+    background-color: #174580c1;
+    width: 100%;
+    height: 100%;
+}
+/*---------------------------------------*/
+/*Inicio*/
+.inicio{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    margin: auto;
+}
+.inicio div{
+    width: 50%;
+}
+.inicio img{
+    width: 90%;
+}
+.inicio p{
+    font-size: 20px;
+    color: #174580;
+}
+.inicio h1{
+    font-size: 50px;
+    color: #444343;
+    padding: 0 0 20px 0;
+}
+/*--------------------------------------*/
+/*Sites responsivos*/
+.sites{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sites div{
+    width: 50%;
+}
+.sites img{
+    width: 90%;
+}
+.sites p{
+    font-size: 20px;
+    color: #174580;
+}
+.sites h1{
+    font-size: 50px;
+    color: #444343;
+    padding: 0 0 20px 0;
+}
+.sites button{
+    font-size: 18px;
+    background-color: #174580;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+.sites button:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+site a{
+    color: white;
+    text-decoration: none;
+}
+
+/*--------------------------------------*/
+/*Radapé*/
+footer{
+    background-image: url("/imagens/rodapee-min.jpg");
+}
+.rodape{
+    max-width: 1366px;
+    margin: auto;
+}
+.rodapeDentro{
+    width: 90%;
+    margin: auto;
+
+   
+}
+.rodape1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444343;
+}
+.listaRodape{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.listaRodape li{
+    padding-top: 15px;
+    padding-right: 30px;
+}
+.rodape2{
+    display: flex;
+    justify-content: space-around;
+}
+.redeSociais{
+    display: flex;
+}
+.redeSociais img{
+    transition: .2s;
+}
+.redeSociais div{
+    margin: 0 5px;
+}
+.redeSociais img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*ANIMAÇÃO SCROLL ---------------------------------------*/
+[data-anime] {
+    opacity: 0;
+    transition: 1.5s;  
+}
+[data-anime = "left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime = "top"] {
+    transform: translate3d(0,-50px, 0);
+}
+[data-anime = "bottom"] {
+    transform: translate3d(0,50px,0);
+}
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+@media screen and (max-width: 767px){
+    .menuMobile{
+        padding: 12px;
+    }
+    .menuMobile div{
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        margin: 10px;
+    }
+   
+    .navegacao{
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #174580;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .navegacao a{
+        color: #fff;
+    }
+    .navegacao li:hover{
+        background-color: white;
+        color: #444343;
+        border-radius: 10px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+    .barra{
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 10px;
+    }
+    .line4{
+        transform: rotate(-49deg) translate(-5px, 8px);
+    }
+    .line5{
+        transform: rotate(49deg) translate(-2px, -7px);
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+    .logoContato{
+        flex-direction: column;
+    }
+    
+    /*-----------------------------------------*/
+    /*Servicos*/
+    .inicio{
+        flex-direction: column;
+    }
+    .inicio div{
+        width: 100%;
+    }
+    .sites{
+        flex-direction: column-reverse;
+    }
+    .sites div{
+        width: 100%;
+    }
+    .rodape1{
+        text-align: center;
+        display: block;
+        border-radius: 20px;
+        padding-top: 10px;
+    }
+    .rodape1 img{
+        width: 80px;
+    }
+    .rodape2{
+    color: #ffff;
+
+    }
+    .listaRodape{
+        display: block;
+    }
+    .listaRodape li{
+        font-size: 20px;
+        padding: 15px;
+        color: #ffff;
+        text-decoration: underline;
+    }
+}
